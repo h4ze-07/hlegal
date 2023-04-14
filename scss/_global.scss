@@ -1,0 +1,16 @@
+// main styles
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.21;
+}
+
+.center {
+    padding-left: calc(50vw - 800px);
+    padding-right: calc(50vw - 800px);
+}
+
