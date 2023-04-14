@@ -1,0 +1,141 @@
+.section-with-bg {
+
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+
+    .intro {
+        background-image: url(../img/intro-letter.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        &__label {
+            margin: 0;
+            padding-top: 477px;
+            padding-bottom: 405px;
+            color: #FFFFFF;
+            font-size: 38px;
+            font-weight: 700;
+        }
+        &__btn {
+            background-color: transparent;
+            width: 42px;
+            height: 42px;
+            opacity: 50%;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .offer {
+        padding-left: calc(50vw - 680px);
+        padding-right: calc(50vw - 680px);
+        display: flex;
+        gap: 60px;
+        &__labels {
+            list-style: none;
+            margin: 0;
+            padding: 14.5px 0;
+            min-width: 375px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            &-item {
+                font-size: 38px;
+                font-weight: 700;
+                text-align: right;
+                white-space: none;
+                line-height: 46px;
+                color: #B3B3BA;
+                &:hover {
+                    color: #F0145A;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .separator {
+            width: 4px;
+            height: 303px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        &__desc {
+            color: #FFFFFF;
+            padding-top: 73px;
+            padding-bottom: 73px;
+            width: 861px;
+            &-label {
+                font-size: 30px;
+                font-weight: 700;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+            &-text {
+                margin: 0;
+                font-size: 19px;
+            }
+        }
+        
+
+    }
+
+    .services {
+        padding-bottom: 60px;
+
+        &__title {
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            color: #24A3FF;
+
+            &:hover {
+                color: #F0145A;
+            }
+        }
+
+
+
+        &__label {
+            margin: 0 0 60px 0;
+            font-size: 38px;
+            color: #F0145A;//поменять на градиент
+        }
+        &__articles {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+
+            &-item {
+                max-width: 493.33px;
+                display: flex;
+                flex-direction: column;
+
+                &-logo {
+                    width: 92px;
+                    height: 92px;
+                    background: #FFFFFF;
+                    border-radius: 24px;
+                    margin: 0 0 30px 0;
+                }
+
+                &-title {
+                    font-size: 22px;
+                    color: #24A3FF;
+                    margin: 0 0 15px 0;
+                }
+
+                &-desc {
+                    margin: 0;
+                    color: #FFFFFF;
+                }                
+            }
+        }
+    }
+}

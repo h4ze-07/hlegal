@@ -1,10 +1,12 @@
 
 header {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%); //убрать позже
-    color: #fff; // убрать позже
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
 
     padding-top: 50px;
-    padding-bottom: 50px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -18,9 +20,11 @@ header {
         .contacts-area {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 12px;
             &__langbox {
                 display: flex;
+                font-size: 12px;
+                font-weight: 700;
                 &-item {
                     text-decoration: none;
                     color: #fff;
@@ -35,27 +39,38 @@ header {
                 }
                 
             }
-            &__list {
-                list-style: none;
+            &__item {
                 padding: 0;
                 margin: 0;
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                .contacts-area__list-item {
-                    .phone-link {
-                        text-decoration: none;
-                        color: #fff;
-                        &:hover {
-                            border-bottom: 2px solid #F0145A;
-                            color: #F0145A;;
-                        }
-                    }
+                color: #FFFFFF;
+                position: relative;
+                margin-left: 6px;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 35%;
+                    left: -12px;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    text-align: center;
+                    vertical-align: middle;
+                    background-color: #E6E6F0;
                 }
-                
-                
             }
 
+            a.contacts-area__item {
+                text-decoration: none;
+                font-weight: 700;
+                color: #fff;
+                border-bottom: 2px solid transparent;
+            }
+
+            .phone-link:hover {
+                border-bottom-color: #F0145A;
+                color: #F0145A;;
+            }
         }
     }
 
@@ -63,6 +78,7 @@ header {
         &__list {
             margin: 0;
             padding: 0;
+            font-weight: 700;
             list-style: none;
             display: flex;
             justify-content: flex-end;
@@ -71,6 +87,7 @@ header {
                 .nav__list-link {
                     text-decoration: none;
                     color: #fff;
+                    padding-bottom: 3px;
                     &:hover {
                         border-bottom: 2px solid #F0145A;
                         color: #F0145A;   

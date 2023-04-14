@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.21;
+    background-color: #FFFFFF;
 }
 
 .center {
     padding-left: calc(50vw - 800px);
     padding-right: calc(50vw - 800px);
 }
-
