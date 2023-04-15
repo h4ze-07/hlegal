@@ -1,0 +1,68 @@
+.publications {
+    
+    &__title {
+        text-transform: uppercase;
+        padding-top: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #24A3FF;
+        margin: 0 0 10px 0;
+        &:hover {
+            color: #F0145A;
+        }
+    }
+
+    &__label {
+        color: #F0145A;//поменять на градиент;
+        font-weight: 700;
+        font-size: 38px;
+        margin: 0 0 30px 0;
+    }
+
+
+    &__articles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #E6E6F0;
+
+        &-item {
+            width: 513.33px;
+            
+
+            &-photo {
+                width: 513.33px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px 8px 0px 0px;
+                margin-bottom: 30px;
+            }
+
+            &-title {
+                color: #24A3FF;
+                padding: 0 30px;
+                margin: 0 0 15px 0;
+                &:hover {
+                    color: #F0145A;
+                }
+            }
+
+            &-date {
+                margin: 0 30px;
+                font-weight: 700;
+                font-size: 12px;
+                padding-bottom: 15px;
+                color: #B3B3BA;
+                border-bottom: 4px solid #E6E6F0;
+            }
+
+            &-text {
+                padding: 0 30px 30px;
+                font-size: 14px;
+                color: #000000;
+            }
+            
+        }
+    }
+}

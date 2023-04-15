@@ -7,6 +7,11 @@
     &__photo {
         width: 400px;
         height: 298px;
+        border-radius: 12px 0px 0px 12px;
+        background: url(../img/team-1-alex.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__desc {
@@ -22,6 +27,15 @@
                 color: #F0145A;
             }
         }
+
+        svg {
+            display: inline-block;
+            width: 8px;
+            height: 18px;
+            fill: none;
+            stroke: #24A3FF;
+        }
+
         &-quote {
             color: #F0145A;//поменять на градиент;
             font-weight: 700;
@@ -37,6 +51,14 @@
             font-size: 14px;
             color: #B3B3BA;
         }
+
+        &-title,
+        &-quote,
+        &-name,
+        &-post {
+            padding-left: 30px;
+        }
+
     }
 
 
@@ -56,7 +78,8 @@
             &:nth-child(3) {
                 opacity: .2;
             }
-            &:hover {
+            &:hover,
+            &:active {
                 cursor: pointer;
                 background: #24A3FF;
                 opacity: 1;

@@ -12,6 +12,14 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    .logo {
+
+        &__icon {
+            width: 130px;
+            height: 60px;
+        }
+    }
+
     .info-area {
         display: flex;
         flex-direction: column;
@@ -45,6 +53,16 @@ header {
                 color: #FFFFFF;
                 position: relative;
                 margin-left: 6px;
+                &-logo {
+                    width: 24px;
+                    height: 24px;
+                    fill: #FFFFFF;
+                    &:hover,
+                    &:active {
+                        fill: #F0145A;
+                    }
+                    
+                }
                 &::before {
                     content: '';
                     display: inline-block;

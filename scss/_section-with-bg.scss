@@ -8,7 +8,7 @@
     
 
     .intro {
-        background-image: url(../img/intro-letter.svg);
+        background-image: url(../img/svg/intro-letter.svg);
         background-repeat: no-repeat;
         background-position: center;
         text-align: center;
@@ -24,10 +24,24 @@
             background-color: transparent;
             width: 42px;
             height: 42px;
-            opacity: 50%;
+            opacity: .5;
             border: 2px solid #FFFFFF;
             border-radius: 50%;
             margin-bottom: 30px;
+            text-align: center;
+            
+        
+
+            &-svg {
+                display: block;
+                margin: 0;
+                
+                
+                width: 100%;
+                height: 100%;
+                
+                stroke: #FFFFFF;
+            }
         }
     }
 
@@ -123,6 +137,14 @@
                     background: #FFFFFF;
                     border-radius: 24px;
                     margin: 0 0 30px 0;
+                    
+                    svg {
+                        display: block;
+                        margin: 14px;
+                        width: 64px;
+                        height: 64px;
+                        fill: #F0145A;
+                    }
                 }
 
                 &-title {

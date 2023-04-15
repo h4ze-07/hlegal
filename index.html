@@ -15,7 +15,9 @@
     
     <header class="header center">
         <a href="#" class="logo">
-            <img src="img/logo.svg" alt="logo">
+            <svg class="logo__icon">
+                <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
         </a>
 
         <article class="info-area">
@@ -29,7 +31,9 @@
                 <p class="contacts-area__item">Kyiv, Mechnikova str, 14/1</p>
                 <a href="tel:+0800211927" class="contacts-area__item phone-link">0800 211 927</a>
                 <a href="#" class="contacts-area__item">
-                    <img src="img/header-facebook-logo.svg" alt="facebook logo">
+                    <svg class="contacts-area__item-logo">
+                        <use xlink:href="img/sprite.svg#facebook-logo"></use>
+                    </svg>
                 </a>
 
             </article>
@@ -54,7 +58,11 @@
                 <h1 class="intro__label">
                     you legal solutions provider
                 </h1>
-                <button class="intro__btn"></button>
+                <button class="intro__btn">
+                    <svg class="intro__btn-svg">
+                        <use xlink:href="img/sprite.svg#arrow-2"></use>
+                    </svg>
+                </button>
 
             </div>
             <div class="offer">
@@ -87,7 +95,9 @@
                 <div class="services__articles">
                     <article class="services__articles-item">
                         <div class="services__articles-item-logo">
-
+                            <svg>
+                                <use xlink:href="img/sprite.svg#ecommerce"></use>
+                            </svg>
                         </div>
                         <h3 class="services__articles-item-title">
                             IT and e-commerce
@@ -98,7 +108,9 @@
                     </article>
                     <article class="services__articles-item">
                         <div class="services__articles-item-logo">
-                            
+                            <svg>
+                                <use xlink:href="img/sprite.svg#support"></use>
+                            </svg>
                         </div>
                         <h3 class="services__articles-item-title">
                             Comprehensive daily <br> legal support
@@ -109,7 +121,9 @@
                     </article>
                     <article class="services__articles-item">
                         <div class="services__articles-item-logo">
-                            
+                            <svg>
+                                <use xlink:href="img/sprite.svg#corporate"></use>
+                            </svg>
                         </div>
                         <h3 class="services__articles-item-title">
                             Structuring corporate relationships
@@ -120,7 +134,9 @@
                     </article>
                     <article class="services__articles-item">
                         <div class="services__articles-item-logo">
-                            
+                            <svg>
+                                <use xlink:href="img/sprite.svg#trust"></use>
+                            </svg>
                         </div>
                         <h3 class="services__articles-item-title">
                             Building contractual relations
@@ -131,7 +147,9 @@
                     </article>
                     <article class="services__articles-item">
                         <div class="services__articles-item-logo">
-                            
+                            <svg>
+                                <use xlink:href="img/sprite.svg#protection"></use>
+                            </svg>
                         </div>
                         <h3 class="services__articles-item-title">
                             Protection of business, intellectual <br> property
@@ -142,7 +160,9 @@
                     </article>
                     <article class="services__articles-item">
                         <div class="services__articles-item-logo">
-                            
+                            <svg>
+                                <use xlink:href="img/sprite.svg#court"></use>
+                            </svg>
                         </div>
                         <h3 class="services__articles-item-title">
                             Judicial representation
@@ -158,9 +178,14 @@
         </section>
 
         <section class="center team">
-            <img src="#" alt="team member photo" class="team__photo">
+            <div class="team__photo"></div>
             <article class="team__desc">
-                <p class="team__desc-title">команда</p>
+                <p class="team__desc-title">команда
+                    <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </p>
+                
                 <p class="team__desc-quote">
                     Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
                 </p>
@@ -223,8 +248,86 @@
 
         </section>
 
+        <section class="center publications">
+            <p class="publications__title">
+                Publications
+            </p>
+            <p class="publications__label">
+                We have something to tell
+            </p>
+            <div class="publications__articles">
+                <article class="publications__articles-item">
+                    <img src="img/Publication-1.jpg" alt="publication 1" class="publications__articles-item-photo">
+                    <h4 class="publications__articles-item-title">
+                        Equity associate
+                    </h4>
+                    <p class="publications__articles-item-date">
+                        April 22
+                    </p>
+                    <p class="publications__articles-item-text">
+                        I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
+                    </p>
+                </article>
+                <article class="publications__articles-item">
+                    <img src="img/Publication-2.jpg" alt="publication 2" class="publications__articles-item-photo">
+                    <h4 class="publications__articles-item-title">
+                        Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                    </h4>
+                    <p class="publications__articles-item-date">
+                        September 29
+                    </p>
+                    <p class="publications__articles-item-text">
+                        And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
+                    </p>
+                </article>
+                <article class="publications__articles-item">
+                    <img src="img/Publication-3.jpg" alt="publication 3" class="publications__articles-item-photo">
+                    <h4 class="publications__articles-item-title">
+                        Millennial Testament
+                    </h4>
+                    <p class="publications__articles-item-date">
+                        August 19
+                    </p>
+                    <p class="publications__articles-item-text">
+                        What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
 
+    <footer class="center footer">
+        <div class="footer__location">
+            <div class="location__container">
+                <p class="location__container-address">
+                    Kyiv, Mechnikova str, 14/1
+                </p>
+                <a href="#" class="location__container-map">
+                    On map
+                </a>
+            </div>
+            <p class="rights">
+                © 2021 HLEGAL Law company, LLC
+            </p>
+        </div>
+        <div class="footer__links">
+            <a href="#" class="footer__links-facebook">
+                <svg>
+                    <use xlink:href="img/sprite.svg#facebook-logo"></use>
+                </svg>
+            </a>
+            <a href="tel:+0800211927" class="footer__links-phone">
+                0800 211 927
+            </a>
+            <a href="mailto:contact@forstudy.space" class="footer__links-email">
+                contact@forstudy.space
+            </a>
+        </div>
+
+    </footer>
 
 </body>
 </html>

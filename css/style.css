@@ -28,6 +28,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+header .logo__icon {
+  width: 130px;
+  height: 60px;
+}
 header .info-area {
   display: flex;
   flex-direction: column;
@@ -59,6 +63,14 @@ header .info-area .contacts-area__item {
   color: #FFFFFF;
   position: relative;
   margin-left: 6px;
+}
+header .info-area .contacts-area__item-logo {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+}
+header .info-area .contacts-area__item-logo:hover, header .info-area .contacts-area__item-logo:active {
+  fill: #F0145A;
 }
 header .info-area .contacts-area__item::before {
   content: "";
@@ -102,6 +114,95 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   color: #F0145A;
 }
 
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer__location {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__location .location__container {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.footer__location .location__container-address {
+  margin: 0;
+  color: #323264;
+}
+.footer__location .location__container-map {
+  text-decoration: none;
+  margin: 0;
+  color: #24A3FF;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+}
+.footer__location .location__container-map:hover {
+  color: #F0145A;
+}
+.footer__location .location__container-map::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: -16px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #B3B3BA;
+}
+.footer__location .rights {
+  margin: 0;
+  color: #B3B3BA;
+}
+.footer__links {
+  margin-top: 21px;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+.footer__links-facebook svg {
+  display: block;
+  width: 38px;
+  height: 38px;
+  fill: #24A3FF;
+}
+.footer__links-facebook svg:hover, .footer__links-facebook svg:active {
+  fill: #F0145A;
+}
+.footer__links-phone {
+  color: #46466E;
+}
+.footer__links-email {
+  color: #24A3FF;
+}
+.footer__links-email:hover {
+  color: #F0145A;
+}
+.footer__links-phone, .footer__links-email {
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+.footer__links-phone::before, .footer__links-email::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: -16px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #B3B3BA;
+}
+
 .section-with-bg {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
@@ -110,7 +211,7 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   gap: 60px;
 }
 .section-with-bg .intro {
-  background-image: url(../img/intro-letter.svg);
+  background-image: url(../img/svg/intro-letter.svg);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -127,10 +228,18 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   background-color: transparent;
   width: 42px;
   height: 42px;
-  opacity: 50%;
+  opacity: 0.5;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   margin-bottom: 30px;
+  text-align: center;
+}
+.section-with-bg .intro__btn-svg {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  stroke: #FFFFFF;
 }
 .section-with-bg .offer {
   padding-left: calc(50vw - 680px);
@@ -215,6 +324,13 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   border-radius: 24px;
   margin: 0 0 30px 0;
 }
+.section-with-bg .services__articles-item-logo svg {
+  display: block;
+  margin: 14px;
+  width: 64px;
+  height: 64px;
+  fill: #F0145A;
+}
 .section-with-bg .services__articles-item-title {
   font-size: 22px;
   color: #24A3FF;
@@ -234,6 +350,11 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 .team__photo {
   width: 400px;
   height: 298px;
+  border-radius: 12px 0px 0px 12px;
+  background: url(../img/team-1-alex.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .team__desc {
   width: 1200px;
@@ -248,6 +369,13 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 }
 .team__desc-title:hover {
   color: #F0145A;
+}
+.team__desc svg {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  fill: none;
+  stroke: #24A3FF;
 }
 .team__desc-quote {
   color: #F0145A;
@@ -264,6 +392,9 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   font-size: 14px;
   color: #B3B3BA;
 }
+.team__desc-title, .team__desc-quote, .team__desc-name, .team__desc-post {
+  padding-left: 30px;
+}
 .team .slider {
   width: 100%;
   display: flex;
@@ -279,7 +410,7 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 .team .slider__circle:nth-child(2), .team .slider__circle:nth-child(3) {
   opacity: 0.2;
 }
-.team .slider__circle:hover {
+.team .slider__circle:hover, .team .slider__circle:active {
   cursor: pointer;
   background: #24A3FF;
   opacity: 1;
@@ -351,4 +482,61 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 .partners__list-item:nth-child(12) {
   background-color: #000000;
   border-bottom-right-radius: 12px;
+}
+
+.publications__title {
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #24A3FF;
+  margin: 0 0 10px 0;
+}
+.publications__title:hover {
+  color: #F0145A;
+}
+.publications__label {
+  color: #F0145A;
+  font-weight: 700;
+  font-size: 38px;
+  margin: 0 0 30px 0;
+}
+.publications__articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #E6E6F0;
+}
+.publications__articles-item {
+  width: 513.33px;
+}
+.publications__articles-item-photo {
+  width: 513.33px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+  margin-bottom: 30px;
+}
+.publications__articles-item-title {
+  color: #24A3FF;
+  padding: 0 30px;
+  margin: 0 0 15px 0;
+}
+.publications__articles-item-title:hover {
+  color: #F0145A;
+}
+.publications__articles-item-date {
+  margin: 0 30px;
+  font-weight: 700;
+  font-size: 12px;
+  padding-bottom: 15px;
+  color: #B3B3BA;
+  border-bottom: 4px solid #E6E6F0;
+}
+.publications__articles-item-text {
+  padding: 0 30px 30px;
+  font-size: 14px;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
