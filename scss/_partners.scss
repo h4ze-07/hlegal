@@ -14,12 +14,12 @@
         font-size: 14px;
         margin: 0;
         text-transform: uppercase;
-        color: #323264;
+        color: var(--main-text-color);
     }
     &__list {
         display: flex;
         flex-wrap: wrap;
-        border-radius: 12px;
+        justify-content: center;
 
         &-item {
             width: 430px;

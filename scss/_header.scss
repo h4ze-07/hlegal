@@ -35,7 +35,7 @@ header {
                 font-weight: 700;
                 &-item {
                     text-decoration: none;
-                    color: #fff;
+                    color: var(--white-text-color);
                     
                     padding: 5px 7px;
                     border-radius: 8px;
@@ -43,23 +43,23 @@ header {
                 &-item:hover,
                 &-item:focus,
                 &-item:active {
-                    background-color: #F0145A;
+                    background-color: var(--accent-text-color);
                 }
                 
             }
             &__item {
                 padding: 0;
                 margin: 0;
-                color: #FFFFFF;
+                color: var(--white-text-color);
                 position: relative;
                 margin-left: 6px;
                 &-logo {
                     width: 24px;
                     height: 24px;
-                    fill: #FFFFFF;
+                    fill: var(--white-text-color);
                     &:hover,
                     &:active {
-                        fill: #F0145A;
+                        fill: var(--accent-text-color);
                     }
                     
                 }
@@ -74,20 +74,20 @@ header {
                     border-radius: 50%;
                     text-align: center;
                     vertical-align: middle;
-                    background-color: #E6E6F0;
+                    background-color: var(--separator-color);
                 }
             }
 
             a.contacts-area__item {
                 text-decoration: none;
                 font-weight: 700;
-                color: #fff;
+                color: var(--white-text-color);
                 border-bottom: 2px solid transparent;
             }
 
             .phone-link:hover {
-                border-bottom-color: #F0145A;
-                color: #F0145A;;
+                border-bottom-color: var(--accent-text-color);
+                color: var(--accent-text-color);
             }
         }
     }
@@ -104,11 +104,11 @@ header {
             .nav__list-item {
                 .nav__list-link {
                     text-decoration: none;
-                    color: #fff;
+                    color: var(--white-text-color);
                     padding-bottom: 3px;
                     &:hover {
-                        border-bottom: 2px solid #F0145A;
-                        color: #F0145A;   
+                        border-bottom: 2px solid var(--accent-text-color);
+                        color: var(--accent-text-color);   
                     }
                     
                 }

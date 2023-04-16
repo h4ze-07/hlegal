@@ -19,3 +19,25 @@ body {
     padding-left: calc(50vw - 800px);
     padding-right: calc(50vw - 800px);
 }
+
+
+
+.blue-link {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--link-text-color);
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--accent-text-color);
+    }
+}
+
+.section__label {
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--accent-text-color); //заменить на градиент
+}

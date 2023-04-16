@@ -1,0 +1,334 @@
+@media screen and (max-width: 1440px) {
+    .center {
+        padding-left: calc(50vw - 660px);
+        padding-right: calc(50vw - 660px);
+    }
+
+    .main {
+
+        //section with bg
+        .section-with-bg {
+
+            //block 'intro'
+            .intro {
+                background-size: 697px 799px;
+
+                &__label {
+                    padding-top: 377px;
+                    padding-bottom: 305px;
+                }
+            }
+            //block 'intro'
+
+
+            //block 'offer'
+            .offer {
+                padding-left: calc(50vw - 540px);
+                padding-right: calc(50vw - 540px);
+
+                &__desc {
+                    max-width: 581px;
+                    padding-top: 43px;
+                    padding-bottom: 43px;
+                }
+            }
+            //block 'offer'
+
+
+            //block 'services'
+            .services {
+
+                .services__articles-item-desc,
+                .services__articles-item-title {
+                    max-width: 400px;
+                }
+            }
+            //block 'services'
+        }
+        //section with bg
+
+        //section team
+        .team {
+            &__photo {
+                height: 344px;
+            }
+            &__desc {
+                max-width: 920px;
+
+                &-quote {
+                    max-width: 860px;
+                }
+            }
+        }
+        //section team
+
+        //section partners
+        .partners {
+            padding-bottom: 30px;
+            .partners__list-item {
+                width: 360px;
+                border-radius: 0px;
+            }
+        }
+        //section partners
+
+        //section publications
+        .publications {
+            &__title {
+                padding-top: 0;
+            }
+            &__articles {
+                &-item {
+                    max-width: 420px;
+                    &-photo {
+                        max-width: 420px;
+                        
+                    }
+                }
+                
+            }
+        }
+        //section publications
+
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .center {
+        padding-left: calc(50vw - 452px);
+        padding-right: calc(50vw - 452px);
+    }
+
+    .main {
+
+        //section with bg
+        .section-with-bg {
+
+            //block 'intro'
+            .intro {
+                background-size: 700px 768px;
+
+                &__label {
+                    padding-top: 361px;
+                    padding-bottom: 289px;
+                }
+            }
+            //block 'intro'
+
+
+            //block 'offer'
+            .offer {
+                padding-left: calc(50vw - 452px);
+                padding-right: calc(50vw - 452px);
+
+                &__desc {
+                    max-width: 405px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+            //block 'offer'
+
+
+            //block 'services'
+            .services {
+                .services__articles-item-desc,
+                .services__articles-item-title {
+                    max-width: 261.33px;
+                }
+            }
+            //block 'services'
+        }
+        //section with bg
+
+        //section team
+        .team {
+            &__photo {
+                height: 528px;
+            }
+            &__desc {
+                max-width: 504px;
+
+                &-quote {
+                    max-width: 444px;
+                }
+            }
+        }
+        //section team
+
+        //section partners
+        .partners {
+            padding-bottom: 30px;
+            .partners__list-item {
+                max-width: 256px;
+                border-radius: 0px;
+            }
+        }
+        //section partners
+
+        //section publications
+        .publications {
+            &__title {
+                padding-top: 0;
+            }
+            &__articles {
+                &-item {
+                    max-width: 281.33px;
+                    &-photo {
+                        max-width: 281.33px; 
+                    }
+                }
+                
+            }
+        }
+        //section publications
+
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .center {
+        padding-left: calc(50vw - 324px);
+        padding-right: calc(50vw - 324px);
+    }
+
+    .header {
+
+        .logo {
+            position: absolute;
+            top: 105px;
+            z-index: 10;
+        }
+        .info-area {
+            order: -1;
+            align-items: flex-start;
+            gap: 125px;
+        }
+        
+    }
+
+    .main {
+
+        //section with bg
+        .section-with-bg {
+
+            //block 'intro'
+            .intro {
+                background-size: 893px 1024px;
+
+                &__label {
+                    padding-top: 489px;
+                    padding-bottom: 417px;
+                }
+            }
+            //block 'intro'
+
+
+            //block 'offer'
+            .offer {
+                padding-left: calc(50vw - 324px);
+
+                flex-direction: column;
+
+                &__labels {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    white-space: none;
+                    overflow: auto;
+                    flex-direction: row;
+                    white-space: nowrap;
+                    &-item {
+                        text-align: left;
+                    }
+                }
+
+                &__desc {
+                    max-width: 648px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+                .separator {
+                    height: 4px;
+                    width: 100%;
+                }
+            }
+            //block 'offer'
+
+
+            //block 'services'
+            .services {
+                .services__articles-item-desc,
+                .services__articles-item-title {
+                    max-width: 294px;
+                }
+            }
+            //block 'services'
+        }
+        //section with bg
+
+        //section team
+        .team {
+            &__photo {
+                width: 648px;
+                height: 500px;
+                border-radius: 12px 12px 0px 0px;
+            }
+            &__desc {
+                max-width: 648px;
+
+                &-quote {
+                    max-width: 588px;
+                }
+            }
+        }
+        //section team
+
+        //section partners
+        .partners {
+            padding-bottom: 0 0 30px 0;
+            .partners__list-item {
+                max-width: 256px;
+                border-radius: 0px;
+            }
+        }
+        //section partners
+
+        //section publications
+        .publications {
+            &__title {
+                padding-top: 0;
+            }
+            &__articles {
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 309px;
+                    &-photo {
+                        max-width: 309px; 
+                    }
+                    &:last-child {
+                        max-width: 100%;
+                    }
+                    &:last-child img {
+                        max-width: 100%;
+                        align-self: stretch;
+                    }
+                }
+            }
+        }
+        //section publications
+
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .center {
+        padding-left: calc(50vw - px);
+        padding-right: calc(50vw - px);
+    }
+}
