@@ -13,6 +13,7 @@
     &__articles {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
         padding-bottom: 30px;
         border-bottom: 2px solid var(--separator-color);

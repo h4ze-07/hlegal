@@ -521,6 +521,7 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 }
 .section-with-bg .services__articles {
   display: flex;
+  justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
 }
@@ -698,6 +699,7 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 .publications__articles {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding-bottom: 30px;
   border-bottom: 2px solid var(--separator-color);

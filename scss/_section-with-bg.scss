@@ -110,6 +110,7 @@
         }
         &__articles {
             display: flex;
+            justify-content: center;
             gap: 60px;
             flex-wrap: wrap;
 

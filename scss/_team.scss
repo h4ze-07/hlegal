@@ -5,8 +5,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     &__photo {
-        width: 400px;
-        height: 298px;
+        max-width: 400px;
+        max-height: 298px;
         border-radius: 12px 0px 0px 12px;
         background: url(../img/team-1-alex.png);
         background-position: center;

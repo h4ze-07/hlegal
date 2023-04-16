@@ -50,7 +50,7 @@
         //section team
         .team {
             &__photo {
-                height: 344px;
+                max-height: 344px;
             }
             &__desc {
                 max-width: 920px;
