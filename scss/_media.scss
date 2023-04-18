@@ -458,6 +458,10 @@
 
     .header {
 
+        .menu__toggler {
+            display: block;
+        }
+
         background-color: rgba(245, 245, 250, 0.2);
 
         padding-top: 10px;
@@ -474,10 +478,6 @@
                 max-width: 69px;
                 max-height: 32px;
             }
-        }
-
-        &__toggler {
-            display: block;
         }
 
         .info-area {

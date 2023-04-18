@@ -165,26 +165,24 @@ header .info-area .contacts-area .phone-link:hover {
   border-bottom-color: var(--accent-text-color);
   color: var(--accent-text-color);
 }
-header .header__toggler {
+header .menu__toggler {
+  z-index: 50;
+  display: none;
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  cursor: pointer;
-  display: none;
   position: absolute;
   top: 57.5px;
   right: 15px;
 }
-header .header__toggler:hover {
+header .menu__toggler:hover {
   background-color: var(--separator-color);
 }
-header .header__toggler:hover span {
+header .menu__toggler:hover span {
   border-color: var(--main-text-color);
 }
-header .header__toggler span {
+header .menu__toggler span {
   display: block;
-  background-color: var(--white-text-color);
-  position: absolute;
   width: 18px;
   border: 1px solid var(--white-text-color);
   position: absolute;
@@ -192,11 +190,28 @@ header .header__toggler span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header .header__toggler span:nth-child(1) {
+header .menu__toggler span:nth-child(1) {
   margin-top: -6px;
 }
-header .header__toggler span:nth-child(3) {
+header .menu__toggler span:nth-child(3) {
   margin-top: 6px;
+}
+header #nav-toggler:checked ~ .nav {
+  display: flex;
+}
+header #nav-toggler:checked ~ .menu__toggler {
+  position: fixed;
+  top: unset;
+  bottom: 307px;
+  right: 27px;
+}
+header #nav-toggler:checked ~ .menu__toggler span {
+  border-color: #EC6F5D;
+  transform: translate(-50%, -50%) rotate(225deg);
+  margin-top: 0;
+}
+header #nav-toggler:checked ~ .menu__toggler span:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-225deg);
 }
 header .nav {
   display: flex;
@@ -883,6 +898,9 @@ header .nav__list .nav__list-item .nav__list-link:hover {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header .menu__toggler {
+    display: block;
+  }
   .header .logo {
     position: absolute;
     top: 60px;
@@ -891,9 +909,6 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   .header .logo__icon {
     max-width: 69px;
     max-height: 32px;
-  }
-  .header__toggler {
-    display: block;
   }
   .header .info-area {
     order: -1;

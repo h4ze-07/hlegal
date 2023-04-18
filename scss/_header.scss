@@ -96,13 +96,14 @@ header {
         }
     }
 
-    .header__toggler {
-        
+    .menu__toggler {
+        z-index: 50;
+
+        display: none;
         width: 32px;
         height: 32px;
         border-radius: 8px;
-        cursor: pointer;
-        display: none;
+
         position: absolute;
         top: 57.5px;
         right: 15px;
@@ -110,28 +111,46 @@ header {
         &:hover {
             background-color: var(--separator-color);
         }
-        &:hover span{
+        &:hover span {
             border-color: var(--main-text-color);
         }
 
         span {
             display: block;
-            background-color: var(--white-text-color);
-            position: absolute;
             width: 18px;
             border: 1px solid var(--white-text-color);
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &:nth-child(1) {
+            &:nth-child(1)  {
                 margin-top: -6px;
             }
-            &:nth-child(3) {
+            &:nth-child(3)  {
                 margin-top: 6px;
             }
         }
     }
+
+    #nav-toggler:checked ~ .nav {
+        display: flex;
+    }
+
+    #nav-toggler:checked ~ .menu__toggler {
+        position: fixed;
+        top: unset;
+        bottom: 307px;
+        right: 27px;
+
+        span {
+            border-color: #EC6F5D;
+            transform: translate(-50%,-50%) rotate(225deg);
+            margin-top: 0;
+            &:nth-child(2) {
+                transform: translate(-50%,-50%) rotate(-225deg);
+            }
+        }
+      }
 
     .nav {
         display: flex;
