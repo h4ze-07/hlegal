@@ -5,8 +5,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     &__photo {
-        max-width: 400px;
-        max-height: 298px;
+        width: 400px;
+        height: 298px;
         border-radius: 12px 0px 0px 12px;
         background: url(../img/team-1-alex.png);
         background-position: center;
@@ -21,14 +21,6 @@
             margin: 0 0 5px 0;
         }
 
-        svg {
-            display: inline-block;
-            width: 8px;
-            height: 18px;
-            fill: none;
-            stroke: var(--link-text-color);
-        }
-
         &-quote {
             margin: 0 0 30px 0;
         }
@@ -38,6 +30,7 @@
             margin: 0 0 6px 0;
         }
         &-post {
+            line-height: 1.57;
             margin: 0;
             font-size: 14px;
             color: var(--grey-text-color);

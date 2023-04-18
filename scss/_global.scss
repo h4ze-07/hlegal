@@ -12,7 +12,7 @@ img {
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.21;
-    background-color: #FFFFFF;
+    background-color: var(--white-text-color);
 }
 
 .center {
@@ -29,10 +29,27 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--link-text-color);
+    transition: .4s;
+    svg {
+        position: absolute;
+        margin-left: 5.5px;
+        padding-bottom: 2.8px;
+        display: inline-block;
+        width: 8px;
+        height: 18px;
+        fill: none;
+        transition: .4s;
+        stroke: var(--link-text-color);
+    }
     &:hover,
     &:focus,
     &:active {
         color: var(--accent-text-color);
+    }
+    &:hover svg,
+    &:focus svg,
+    &:active svg {
+        stroke: var(--accent-text-color);
     }
 }
 
@@ -41,3 +58,16 @@ body {
     font-size: 38px;
     color: var(--accent-text-color); //заменить на градиент
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

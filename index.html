@@ -20,6 +20,11 @@
             </svg>
         </a>
 
+        <input type="checkbox" class="visually-hidden" id="nav-toggler">
+        <label for="nav-toggler" class="header__toggler">
+            <span></span><span></span><span></span>
+        </label>
+
         <article class="info-area">
 
             <article class="contacts-area">
@@ -58,24 +63,23 @@
                 <h1 class="intro__label">
                     you legal solutions provider
                 </h1>
-                <button class="intro__btn">
-                    <svg class="intro__btn-svg">
+                <a href="#offer" class="intro__link">
+                    <svg class="intro__link-svg">
                         <use xlink:href="img/sprite.svg#arrow-2"></use>
                     </svg>
-                </button>
+                </a>
 
             </div>
 
-            <div class="offer">
+            <div class="offer" id="offer">
                 <ul class="offer__labels">
-                    <li class="offer__labels-item">Consistent</li>
-                    <li class="offer__labels-item">
+                    <li class="offer__labels-item section__label">Consistent</li>
+                    <li class="offer__labels-item section__label">
                         Customer oriented
                     </li>
-                    <li class="offer__labels-item">Innovative</li>
-                    <li class="offer__labels-item">Business oriented</li>
+                    <li class="offer__labels-item section__label">Innovative</li>
+                    <li class="offer__labels-item section__label">Business oriented</li>
                 </ul>
-                <div class="separator"></div>
                 <article class="offer__desc">
                     <h2 class="offer__desc-label">We turn the idea of legal services</h2>
                     <p class="offer__desc-text">
@@ -88,6 +92,9 @@
 
                 <a href="#" class="services__title blue-link">
                     Services
+                    <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
                 </a>
                 <h2 class="services__label section__label">
                     What can we do better than others?
@@ -178,14 +185,14 @@
         </section>
 
         <section class="center team">
-            <div class="team__photo"></div>
+            <div class="team__photo">
+            </div>
             <article class="team__desc">
                 <a href="#" class="team__desc-title blue-link">команда
                     <svg>
                         <use xlink:href="img/sprite.svg#arrow"></use>
                     </svg>
                 </a>
-                
                 <p class="team__desc-quote section__label">
                     Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
                 </p>
@@ -251,13 +258,18 @@
         <section class="center publications">
             <a href="#" class="publications__title blue-link">
                 Publications
+                <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
             </a>
             <p class="publications__label section__label">
                 We have something to tell
             </p>
             <div class="publications__articles">
                 <article class="publications__articles-item">
-                    <img src="img/Publication-1.jpg" alt="publication 1" class="publications__articles-item-photo">
+                    <div class="publications__articles-item-photo">
+                        <img src="img/publication-1-counting.jpg" alt="publication counting">
+                    </div>
                     <a href="#" class="publications__articles-item-title blue-link">
                         Equity associate
                     </a>
@@ -269,7 +281,9 @@
                     </p>
                 </article>
                 <article class="publications__articles-item">
-                    <img src="img/Publication-2.jpg" alt="publication 2" class="publications__articles-item-photo">
+                    <div class="publications__articles-item-photo">
+                        <img src="img/publication-2-gdrp.jpg" alt="publication counting">
+                    </div>
                     <a href="#" class="publications__articles-item-title blue-link">
                         Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
                     </a>
@@ -281,7 +295,9 @@
                     </p>
                 </article>
                 <article class="publications__articles-item">
-                    <img src="img/Publication-3.jpg" alt="publication 3" class="publications__articles-item-photo">
+                    <div class="publications__articles-item-photo">
+                        <img src="img/publication-3-teamwork.jpg" alt="publication counting">
+                    </div>
                     <a href="#" class="publications__articles-item-title blue-link">
                         Millennial Testament
                     </a>

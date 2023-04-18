@@ -17,16 +17,14 @@
         color: var(--main-text-color);
     }
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(256px, 430px));
+        grid-template-rows: repeat(3, 120px);
 
         &-item {
-            width: 430px;
-            height: 120px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             &:nth-child(1) {
                 background-color: #1C4280;
                 border-top-left-radius: 12px;
