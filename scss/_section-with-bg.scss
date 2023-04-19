@@ -5,6 +5,31 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        float: left;
+        width: 95%;
+        height: 10px;
+        background-color: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        bottom: -10px;
+    }
+    &::before {
+        width: calc(100% - 80px);
+        margin: 0 40px;
+        bottom: -20px;
+        background-color: #E7E7F2;
+    }
+    &::after {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+
     
 
     .intro {
@@ -75,9 +100,17 @@
                 text-align: right;
                 color: var(--grey-text-color);
                 transition: .4s;
+                background: unset;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
                 &:hover {
                     color: var(--accent-text-color);
                     cursor: pointer;
+                }
+                &:first-child {
+                    background: var(--red-text-gradient);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
@@ -133,7 +166,7 @@
                     border-radius: 24px;
                     margin: 0 0 30px 0;
                     
-                    svg {
+                    img {
                         display: block;
                         margin: 14px;
                         width: 64px;

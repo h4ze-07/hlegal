@@ -56,7 +56,9 @@ body {
 .section__label {
     font-weight: 700;
     font-size: 38px;
-    color: var(--accent-text-color); //заменить на градиент
+    background: var(--red-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .visually-hidden {

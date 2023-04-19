@@ -48,7 +48,9 @@ body {
 .section__label {
   font-weight: 700;
   font-size: 38px;
-  color: var(--accent-text-color);
+  background: var(--red-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .visually-hidden {
@@ -87,6 +89,7 @@ body {
 }
 
 header {
+  z-index: 150;
   position: absolute;
   top: 0;
   width: 100%;
@@ -319,6 +322,28 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  position: relative;
+}
+.section-with-bg::before, .section-with-bg::after {
+  content: "";
+  display: block;
+  float: left;
+  width: 95%;
+  height: 10px;
+  background-color: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  bottom: -10px;
+}
+.section-with-bg::before {
+  width: calc(100% - 80px);
+  margin: 0 40px;
+  bottom: -20px;
+  background-color: #E7E7F2;
+}
+.section-with-bg::after {
+  width: calc(100% - 40px);
+  margin: 0 20px;
 }
 .section-with-bg .intro {
   background-image: url(../img/svg/intro-letter.svg);
@@ -383,10 +408,18 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   text-align: right;
   color: var(--grey-text-color);
   transition: 0.4s;
+  background: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 .section-with-bg .offer__labels-item:hover {
   color: var(--accent-text-color);
   cursor: pointer;
+}
+.section-with-bg .offer__labels-item:first-child {
+  background: var(--red-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-with-bg .offer__desc {
   padding-left: 60px;
@@ -434,7 +467,7 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   border-radius: 24px;
   margin: 0 0 30px 0;
 }
-.section-with-bg .services__articles-item-logo svg {
+.section-with-bg .services__articles-item-logo img {
   display: block;
   margin: 14px;
   width: 64px;
@@ -456,7 +489,7 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 .team {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
 }
 .team__photo {
