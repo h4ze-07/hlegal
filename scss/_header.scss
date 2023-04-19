@@ -181,3 +181,29 @@ header {
         }
     }
 }
+
+.header_services {
+    .logo {
+
+        &__icon {
+            width: 302px;
+            height: 60px;
+        }
+    }
+
+    .menu__toggler {
+        top: 67.5px;
+    }
+
+    .nav {
+        &__list {
+            &-item {
+                &:nth-child(2) a{
+                    color: var(--accent-text-color);
+                    border-bottom: 2px solid var(--accent-text-color);
+                }
+            }
+        }
+    }
+}
+

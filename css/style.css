@@ -239,6 +239,18 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   color: var(--accent-text-color);
 }
 
+.header_services .logo__icon {
+  width: 302px;
+  height: 60px;
+}
+.header_services .menu__toggler {
+  top: 67.5px;
+}
+.header_services .nav__list-item:nth-child(2) a {
+  color: var(--accent-text-color);
+  border-bottom: 2px solid var(--accent-text-color);
+}
+
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -486,6 +498,10 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   max-width: 493.33px;
 }
 
+.section-with-bg_services {
+  padding-top: 176px;
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -611,6 +627,10 @@ header .nav__list .nav__list-item .nav__list-link:hover {
 .partners__list-item:nth-child(12) {
   background-color: #000000;
   border-bottom-right-radius: 12px;
+}
+
+.partners_services {
+  margin-top: 80px;
 }
 
 .publications__title {
@@ -828,6 +848,9 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   .main .section-with-bg .services .services__articles-item-title {
     max-width: 294px;
   }
+  .main .section-with-bg_services {
+    padding-top: 280px;
+  }
   .main .team__photo {
     width: 648px;
     height: 500px;
@@ -996,9 +1019,10 @@ header .nav__list .nav__list-item .nav__list-link:hover {
     padding: 7px 0px;
     border-radius: 12px;
     transition: 0.4s;
+    background: var(--bg-color);
   }
   .header .info-area .nav__list .nav__list-item:hover, .header .info-area .nav__list .nav__list-item:active {
-    background: #E6E6F0;
+    background: var(--separator-color);
   }
   .header .info-area .nav__list .nav__list-item .nav__list-link {
     color: var(--link-text-color);
@@ -1007,6 +1031,14 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   .header .info-area .nav__list .nav__list-item .nav__list-link:hover, .header .info-area .nav__list .nav__list-item .nav__list-link:active {
     border: none;
     color: var(--accent-text-color);
+  }
+  .header_services .logo__icon {
+    max-width: 169px;
+    max-height: 57px;
+  }
+  .header_services .info-area .nav__list-item:nth-child(2) .nav__list-link {
+    color: var(--accent-text-color);
+    border: none;
   }
   .main .section-with-bg .intro {
     background-size: 523px 600px;
@@ -1045,6 +1077,9 @@ header .nav__list .nav__list-item .nav__list-link:hover {
   }
   .main .section-with-bg .services__articles {
     justify-content: flex-start;
+  }
+  .main .section-with-bg_services {
+    padding-top: 132px;
   }
   .main .team__photo {
     width: 315px;
